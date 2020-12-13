@@ -34,63 +34,10 @@ h3 {
   font-size: 18px;
 }
 
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 /*ACORDEAO*/
-button {
-  font-size: 4rem !important;
-}
-
-button:hover, button:focus {
-  text-decoration: none !important;
-  outline: none !important;
-  border: 0 !important;
-}
-
-#festival {
-  background-color: #7503A6 !important;
-  color: #BFA004;
-}
-
-#festival button {
-  color: #BFA004 !important;
-}
-
-#filmes {
-  background-color: #2405F2 !important;
-}
-
-#filmes button {
-  color: #BFA004 !important;
-}
-
-#cursos {
-  background-color: #4227F2 !important;
-}
-
-#cursos button {
-  color: #FFC000 !important;
-}
-
-#mesa {
-  background-color: #4227F2 !important;
-}
-
-#mesa button {
-  color: #7503A6 !important;
-}
-
-#master {
-  background-color: #FFC000 !important;
-}
-
-#master button {
-  color: #4227F2 !important;
-}
-
-#contato {
-  background-color: #4227F2 !important;
-}
-
-#contato button {
-  color: #BFA004 !important;
-}
 /*# sourceMappingURL=style.css.map */
