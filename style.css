@@ -7,21 +7,49 @@ button:focus {
   outline: none;
 }
 
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #d30938 !important;
+}
+
+.focus {
+  background-color: #c4c4c4;
+  color: #d30938;
+}
+
 body {
   font-size: 14px;
   line-height: 21px;
   font-family: 'Space Mono', monospace;
+  background-color: #5d782b;
 }
 
 h1 button {
   font-size: 26px !important;
   line-height: 39px !important;
   font-weight: 700 !important;
+  background-color: #d30938;
+  color: #c4c4c4;
+}
+
+h1 button:hover, h2 button:hover {
+  color: #f2f2f2;
 }
 
 h2 button {
   font-size: 21px !important;
   line-height: 31px !important;
+  background-color: #c4c4c4;
+  color: #d30938;
+}
+
+.conteudo {
+  background-color: #c4c4c4;
+  color: #363636;
 }
 
 h3 {
@@ -39,10 +67,29 @@ h4 {
   line-height: 24px;
 }
 
+.contato {
+  background-color: #363636;
+}
+
+.contato h2 {
+  font-size: 26px !important;
+  line-height: 39px !important;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.contato p {
+  color: #f2f2f2;
+}
+
+.contato input {
+  background-color: #c4c4c4;
+}
+
 /*ACORDEAO*/
-.img-destacada-home {
-  -webkit-animation: hue 3s infinite;
-          animation: hue 3s infinite;
+.img-destacada-home, .img-destacada {
+  -webkit-animation: hue 35s infinite;
+          animation: hue 35s infinite;
 }
 
 @-webkit-keyframes hue {
@@ -50,9 +97,9 @@ h4 {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
-  50% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
+  0% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 
@@ -61,9 +108,9 @@ h4 {
     -webkit-filter: hue-rotate(0deg);
             filter: hue-rotate(0deg);
   }
-  50% {
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
+  0% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

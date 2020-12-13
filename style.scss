@@ -13,24 +13,49 @@ button {
 button:focus {
     outline: none;
 }
-
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+//botstrap
+.border-bottom {
+    border-bottom: 1px solid $primary!important;
+}
+//genericos
+.focus {
+    background-color: $neutral;
+    color: $primary;
+}
+//ELEMENTOS
 body {
     font-size: 14px;
     line-height: 21px;
     font-family: 'Space Mono', monospace;
+    background-color: $secondary;
 }
 
-h1 button {
+h1 button { //botao pai
    font-size: 26px!important;
    line-height: 39px!important;
    font-weight: 700!important;
+   background-color: $primary;
+   color: $neutral;
+}
+h1 button:hover, h2 button:hover {
+    color: $light; 
 }
 
-h2 button {
+
+h2 button { //botao filho
     font-size: 21px!important;
     line-height: 31px!important;
+    background-color: $neutral;
+    color: $primary;
 }
-
+.conteudo {
+    background-color: $neutral;
+    color: $dark;
+}
 h3 {
     font-size: 26px!important;
     line-height: 39px!important;
@@ -41,12 +66,26 @@ h3 {
     font-size: 18px;
 }
 
-//subtitulo
-h4 {
+h4 { //subtitulo
     font-size: 16px;
     line-height: 24px;
 }
 
+.contato {
+    background-color: $dark;
+}
+.contato h2 {
+    font-size: 26px!important;
+    line-height: 39px!important;
+    font-weight: 700;
+    color: $light;
+}
+.contato p {
+    color: $light;
+}
+.contato input {
+    background-color: $neutral;
+}
 // .filho, .conteudo {
 //     display: none;
 // }
@@ -89,13 +128,13 @@ h4 {
 
 
 // ANIMA IMG HOME
-.img-destacada-home {
-    animation: hue 3s infinite;
+.img-destacada-home, .img-destacada {
+    animation: hue 35s infinite;
   }
   
   @keyframes hue {
     0%, 100%  { filter: hue-rotate(0deg); }
-    50% { filter: hue-rotate(180deg); }
+    0% { filter: hue-rotate(360deg); }
   }
 
 
