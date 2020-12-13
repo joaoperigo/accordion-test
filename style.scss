@@ -1,3 +1,116 @@
+//TEMPLATE
+$primary : hsl(346,92,43);
+$secondary : hsl(81,47,32);
+$light : hsl(0,0,95);
+$neutral : hsl(0,0,77);
+$dark : hsl(0,0,21);
+
+//RESET
+button {
+    background-color: transparent;
+    border: none;
+}
+button:focus {
+    outline: none;
+}
+
+body {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'Space Mono', monospace;
+}
+
+h1 button {
+   font-size: 26px!important;
+   line-height: 39px!important;
+   font-weight: 700!important;
+}
+
+h2 button {
+    font-size: 21px!important;
+    line-height: 31px!important;
+}
+
+h3 {
+    font-size: 26px!important;
+    line-height: 39px!important;
+    font-weight: 700!important;
+}
+
+.social-media {
+    font-size: 18px;
+}
+
+// .filho, .conteudo {
+//     display: none;
+// }
+
+
+// space mono 400 700 
+// root //fechar //footer //p //breadcrumb
+// font-size: 14px;
+// line-height: 21px;
+
+/*ACORDEAO*/
+//botao pai //COntato 
+//font-size: 34px;
+//line-height: 50px;
+//botao filho
+//font-size: 21px;
+//line-height: 31px;
+
+//titulo seção
+//font-size: 26px;
+//line-height: 39px;
+
+//data
+//font-size: 18px;
+//line-height: 27px;
+
+//participe
+//font-size: 17px;
+//line-height: 25px;
+
+//subtitulo //input[text] //label
+//font-size: 16px;
+//line-height: 24px;
+
+//botao enviar
+//font-size: 20px;
+//line-height: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TESTES
 button {
     font-size: 4rem!important;
 }
