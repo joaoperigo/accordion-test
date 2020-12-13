@@ -1,25 +1,28 @@
+function recursion(c){
+    setTimeout(function(c){
+        c = c || 0;
+        console.log(c++);
+        recursion(c);
+    },0,c);
+}
+
+recursion();
 
 //FILTER
 // function mudaCor(nFilter) {
-//     $( ".img-destacada-home" ).css('filter', 'hue-rotate(' + nFilter + 'deg)');
-//     nFilter++;
-//     if(nFilter==360) nFilter=0;
-//     setInterval( mudacor(nFilter), 100 );
+//     window.setInterval(function() {
+//         console.log(nFilter);
+//         $( ".img-destacada-home" ).css('filter', 'hue-rotate(' + nFilter + 'deg)');
+//         nFilter++;
+//         if(nFilter==360) nFilter=0;
+//         mudacor(nFilter);
+//     }, 1000);
 // }
+// window.setInterval(function() {
+//     mudaCor(0);
+// }, 1000);
 
-function mudaCor(nFilter) {
-    window.setInterval(function() {
-        $( ".img-destacada-home" ).css('filter', 'hue-rotate(' + nFilter + 'deg)');
-        nFilter++;
-        if(nFilter==360) nFilter=0;
-        mudacor(nFilter);
-    }, 100);
-}
-
-window.setInterval(function() {
-    mudaCor(0);
-}, 500);
-
+//ACCORDION
 // start open accordion
 // $('.filho').collapse({
 //     toggle: true

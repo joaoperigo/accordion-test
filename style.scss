@@ -88,6 +88,17 @@ h4 {
 
 
 
+// ANIMA IMG HOME
+.img-destacada-home {
+    animation: hue 3s infinite;
+  }
+  
+  @keyframes hue {
+    0%, 100%  { filter: hue-rotate(0deg); }
+    50% { filter: hue-rotate(180deg); }
+  }
+
+
 
 
 
