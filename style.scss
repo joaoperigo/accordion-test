@@ -1,9 +1,16 @@
 //TEMPLATE
-$primary : hsl(346,92,43);
-$secondary : hsl(81,47,32);
-$light : hsl(0,0,95);
-$neutral : hsl(0,0,77);
-$dark : hsl(0,0,21);
+$primary : hsla(346,92%,43%,1);
+$secondary : hsla(81,47%,32%,1);
+$light : hsla(0,0%,95%,1);
+$neutral : hsla(0,0%,77%,1);
+$dark : hsla(0,0%,21%,1);
+
+$primary60 : hsla(346,92%,43%,.6);
+$secondary90 : hsla(81,47%,32%,.9);
+
+.bg-secondary90 {
+   background-color: $secondary90;
+}
 
 //RESET
 button {
@@ -13,19 +20,58 @@ button {
 button:focus {
     outline: none;
 }
+a:focus, a:hover {
+    text-decoration: none;
+    color: $primary;
+}
 h1, h2 {
     margin: 0;
     padding: 0;
 }
-//botstrap
-.border-bottom {
+
+//sass
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+@mixin border-bottom {
     border-bottom: 1px solid $primary!important;
 }
+@mixin border-top {
+    border-top: 1px solid $primary!important;
+}
+
+//botstrap
+.border-bottom {
+    @include border-bottom();
+}
+.border-top {
+    @include border-top();
+}
+
 //genericos
 .focus {
     background-color: $neutral;
-    color: $primary;
+    color: $primary !important;
+    @include border($primary);
 }
+h2 .focus { 
+    border: none!important;
+}
+.button {
+    background-color: $primary;
+    color: $light;
+    padding: 10px 20px;
+    font-size: 19.8px;
+    line-height: 29px;
+}
+a.button:focus, a.button:hover {
+    text-decoration: none;
+    background-color: $neutral;
+    @include border($neutral);
+    //color: $light;
+}
+
 //ELEMENTOS
 body {
     font-size: 14px;
@@ -33,10 +79,20 @@ body {
     font-family: 'Space Mono', monospace;
     background-color: $secondary;
 }
-
+.cruz-g {
+    width: 17px;
+    height: auto;
+}
+.cruz-p {
+    width: 14.5px;
+    height: auto;
+}
+h1 {
+    @include border-bottom();
+}
 h1 button { //botao pai
-   font-size: 26px!important;
-   line-height: 39px!important;
+   font-size: 38px!important;
+   line-height: 56px!important;
    font-weight: 700!important;
    background-color: $primary;
    color: $neutral;
@@ -44,32 +100,138 @@ h1 button { //botao pai
 h1 button:hover, h2 button:hover {
     color: $light; 
 }
-
-
+h2 {
+    margin-right: 18px;
+}
 h2 button { //botao filho
-    font-size: 21px!important;
-    line-height: 31px!important;
-    background-color: $neutral;
-    color: $primary;
+    font-size: 24px!important;
+    line-height: 36px!important;
+    background-color: $primary;
+    color: $light;
+    @include border($neutral);
 }
 .conteudo {
     background-color: $neutral;
     color: $dark;
+    margin-right: 18px;
 }
 h3 {
-    font-size: 26px!important;
-    line-height: 39px!important;
+    font-size: 30.8px!important;
+    line-height: 46px!important;
     font-weight: 700!important;
 }
-
-.social-media {
-    font-size: 18px;
-}
-
 h4 { //subtitulo
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px!important;
+    line-height: 30px!important;
 }
+blockquote {
+    font-size: 18px;
+    line-height: 31px;
+}
+p {
+    font-size: 16px;
+    line-height: 27px;
+}
+a {
+    color: $primary;
+}
+
+
+
+
+
+
+//SECOES
+.nav-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.logo {
+    width: 85px;
+    height: auto;
+    margin: 18px;
+}
+.site { 
+    position: relative;
+}
+.logo-element-big {
+    width: 34%;
+    margin-left: 23%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.img-destacada-home {
+    background-image: url('img/img-destacada-home.jpg');
+    background-attachment: fixed;
+    background-size: contain;
+}
+.social-media {
+    position: absolute;
+    z-index: 2;
+    bottom: 18px;
+    right: 25%;
+    font-size: 42px;
+}
+.barra-horizontal-verde {
+    background-color: $secondary;
+    width: 100%;
+    height: 36px;
+    position: relative;
+    z-index: 1;
+}
+.conteudo-post {
+    padding: 0 23px;
+}
+.wrapper {
+    padding: 0 0 23px 0;
+}
+.data, .qtd-alunos {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+.img-destacada {
+    padding: 0;
+    position: relative;
+}
+.element-big-post {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: auto;
+}
+.detalhe {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+}
+.wrapper-clickable-post {
+    padding-top: 18px;
+    padding-bottom: 36px;
+}
+.saiba-mais {
+    color: $primary;
+}
+.saiba-mais span {
+    margin-right: 11px;
+}
+.cruz-primaria {
+    width: 12px;
+    height: auto;
+}
+// .img-destacada-src {
+//     padding: 0!important;
+// }
+
+
+
+
+
 
 .contato {
     background-color: $dark;
@@ -128,8 +290,18 @@ h4 { //subtitulo
 
 
 // ANIMA IMG HOME
-.img-destacada-home, .img-destacada {
-    animation: hue 35s infinite;
+// .img-destacada-home, .img-destacada {
+//     animation: hue 35s infinite;
+//   }
+  
+//   @keyframes hue {
+//     0%, 100%  { filter: hue-rotate(0deg); }
+//     0% { filter: hue-rotate(360deg); }
+//   }
+
+  // ANIMA IMG HOME
+* {
+    animation: hue 360s infinite;
   }
   
   @keyframes hue {
