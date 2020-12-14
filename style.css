@@ -248,9 +248,9 @@ a {
 }
 
 /*ACORDEAO*/
-* {
-  -webkit-animation: hue 360s infinite;
-          animation: hue 360s infinite;
+body {
+  -webkit-animation: hue 10s infinite;
+          animation: hue 10s infinite;
 }
 
 @-webkit-keyframes hue {

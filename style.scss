@@ -300,8 +300,8 @@ a {
 //   }
 
   // ANIMA IMG HOME
-* {
-    animation: hue 360s infinite;
+body {
+    animation: hue 10s infinite;
   }
   
   @keyframes hue {
