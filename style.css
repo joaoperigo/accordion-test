@@ -21,6 +21,14 @@ h1, h2 {
   padding: 0;
 }
 
+input {
+  border: none;
+}
+
+input:hover, input:focus {
+  outline: none;
+}
+
 .border-bottom {
   border-bottom: 1px solid #d30938 !important;
 }
@@ -75,11 +83,12 @@ h1 {
 }
 
 h1 button {
-  font-size: 38px !important;
-  line-height: 56px !important;
+  font-size: 34px !important;
+  line-height: 51px !important;
   font-weight: 700 !important;
   background-color: #d30938;
   color: #c4c4c4;
+  padding: 18px 50px 18px 18px;
 }
 
 h1 button:hover, h2 button:hover {
@@ -91,11 +100,13 @@ h2 {
 }
 
 h2 button {
-  font-size: 24px !important;
-  line-height: 36px !important;
+  font-size: 22px !important;
+  line-height: 33px !important;
+  font-weight: bold !important;
   background-color: #d30938;
   color: #f2f2f2;
   border: 1px solid #c4c4c4;
+  padding: 22px 50px 22px 18px;
 }
 
 .conteudo {
@@ -105,17 +116,18 @@ h2 button {
 }
 
 h3 {
-  font-size: 30.8px !important;
-  line-height: 46px !important;
+  font-size: 27.7px !important;
+  line-height: 41px !important;
   font-weight: 700 !important;
 }
 
 h4 {
-  font-size: 20px !important;
-  line-height: 30px !important;
+  font-size: 17px !important;
+  line-height: 25px !important;
+  font-weight: 700 !important;
 }
 
-blockquote {
+blockquote, label {
   font-size: 18px;
   line-height: 31px;
 }
@@ -127,6 +139,12 @@ p {
 
 a {
   color: #d30938;
+}
+
+input {
+  padding: 10px 12px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .nav-topo {
@@ -161,7 +179,7 @@ a {
   background-size: contain;
 }
 
-.social-media {
+.social-media-home {
   position: absolute;
   z-index: 2;
   bottom: 18px;
@@ -178,17 +196,11 @@ a {
 }
 
 .conteudo-post {
-  padding: 0 23px;
+  padding: 0 17px;
 }
 
 .wrapper {
   padding: 0 0 23px 0;
-}
-
-.data, .qtd-alunos {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .img-destacada {
@@ -230,21 +242,43 @@ a {
 
 .contato {
   background-color: #363636;
+  padding: 36px 18px 41px;
+  margin-bottom: 40px;
 }
 
-.contato h2 {
-  font-size: 26px !important;
-  line-height: 39px !important;
-  font-weight: 700;
-  color: #f2f2f2;
+.contato h1 {
+  color: #c4c4c4;
+  border: none !important;
+  padding-bottom: 20px;
 }
 
 .contato p {
   color: #f2f2f2;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.contato label {
+  color: #d30938;
 }
 
 .contato input {
   background-color: #c4c4c4;
+}
+
+.footer {
+  background-color: #363636;
+  color: #f2f2f2;
+}
+
+.footer address {
+  font-size: 28px;
+  padding: 30px 30px 15px 0;
+}
+
+.footer p {
+  padding: 0 0 15px 30px;
+  width: 240px;
 }
 
 /*ACORDEAO*/

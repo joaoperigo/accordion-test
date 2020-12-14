@@ -64,6 +64,13 @@ $(window).on("load", function(){
         } 
         //sempre remove dos filhos
         $( ".collapse-filho" ).removeClass('focus');
+        //desabilita botao por 2 segundos para debug
+        //testar quais seletores
+        $('button').css('pointer-events', 'none');
+        setTimeout(function() {
+            $('button').css('pointer-events', 'auto');
+            //alert("sad");
+        }, 200);
     });
 });
 

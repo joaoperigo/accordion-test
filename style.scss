@@ -12,6 +12,19 @@ $secondary90 : hsla(81,47%,32%,.9);
    background-color: $secondary90;
 }
 
+//MEDIA QUERRY
+// @mixin bigScreen {
+//     @media screen and (min-width: 768px) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin mobile {
+//     @media screen and (max-width: 767px) {
+//       @content;
+//     }
+// }
+
 //RESET
 button {
     background-color: transparent;
@@ -28,7 +41,12 @@ h1, h2 {
     margin: 0;
     padding: 0;
 }
-
+input {
+    border: none;
+}
+input:hover, input:focus {
+    outline: none;
+}
 //sass
 @mixin border($color) {
     border: 1px solid $color;
@@ -91,11 +109,17 @@ h1 {
     @include border-bottom();
 }
 h1 button { //botao pai
-   font-size: 38px!important;
-   line-height: 56px!important;
-   font-weight: 700!important;
-   background-color: $primary;
-   color: $neutral;
+    font-size: 34px!important;
+    line-height: 51px!important;
+    font-weight: 700!important;
+    background-color: $primary;
+    color: $neutral;
+    padding: 18px 50px 18px 18px;
+    
+    // @include bigScreen {
+    //     font-size: 38px!important; 
+    //     line-height: 56px!important; 
+    // }
 }
 h1 button:hover, h2 button:hover {
     color: $light; 
@@ -104,11 +128,18 @@ h2 {
     margin-right: 18px;
 }
 h2 button { //botao filho
-    font-size: 24px!important;
-    line-height: 36px!important;
+    font-size: 22px!important;
+    line-height: 33px!important;
+    font-weight: bold!important;
     background-color: $primary;
     color: $light;
     @include border($neutral);
+    padding: 22px 50px 22px 18px;
+
+    // @include bigScreen {
+    //     font-size: 24px!important; 
+    //     line-height: 36px!important; 
+    // }
 }
 .conteudo {
     background-color: $neutral;
@@ -116,15 +147,20 @@ h2 button { //botao filho
     margin-right: 18px;
 }
 h3 {
-    font-size: 30.8px!important;
-    line-height: 46px!important;
+    // font-size: 30.8px!important;
+    // line-height: 46px!important;
+    font-size: 27.7px!important;
+    line-height: 41px!important;
     font-weight: 700!important;
 }
 h4 { //subtitulo
-    font-size: 20px!important;
-    line-height: 30px!important;
+    // font-size: 20px!important;
+    // line-height: 30px!important;
+    font-size: 17px!important;
+    line-height: 25px!important;
+    font-weight: 700!important;
 }
-blockquote {
+blockquote, label {
     font-size: 18px;
     line-height: 31px;
 }
@@ -134,6 +170,11 @@ p {
 }
 a {
     color: $primary;
+}
+input {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 
@@ -169,7 +210,7 @@ a {
     background-attachment: fixed;
     background-size: contain;
 }
-.social-media {
+.social-media-home {
     position: absolute;
     z-index: 2;
     bottom: 18px;
@@ -184,16 +225,18 @@ a {
     z-index: 1;
 }
 .conteudo-post {
-    padding: 0 23px;
+    padding: 0 17px;
 }
 .wrapper {
     padding: 0 0 23px 0;
 }
-.data, .qtd-alunos {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-}
+// .data, .qtd-alunos {
+//     // font-weight: 700;
+//     // // font-size: 20px;
+//     // // line-height: 30px;
+//     // font-size: 18px;
+//     // line-height: 27px;
+// }
 .img-destacada {
     padding: 0;
     position: relative;
@@ -235,19 +278,58 @@ a {
 
 .contato {
     background-color: $dark;
+    padding: 36px 18px 41px;
+    margin-bottom: 40px;
 }
-.contato h2 {
-    font-size: 26px!important;
-    line-height: 39px!important;
-    font-weight: 700;
-    color: $light;
+.contato h1 {
+    // font-size: 26px!important;
+    // line-height: 39px!important;
+    // font-weight: 700;
+    color: $neutral;
+    border: none!important;
+    padding-bottom: 20px;
 }
 .contato p {
     color: $light;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+.contato label {
+    color: $primary;
 }
 .contato input {
     background-color: $neutral;
 }
+
+.footer {
+    background-color: $dark;
+    color: $light;
+}
+.footer address {
+    font-size: 28px;
+    padding: 30px 30px 15px 0;
+}
+.footer p {
+    padding: 0 0 15px 30px;
+    width: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .filho, .conteudo {
 //     display: none;
 // }
