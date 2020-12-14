@@ -52,7 +52,7 @@
                 <div class="conteudo collapse">
 
                   <section class="conteudo-post">
-                    <div class="container">
+                    <div class="container-fluid">
                       <div class="row">
 
                         <!-- data e numer participantes -->
@@ -74,11 +74,11 @@
                           <img src="./img/detalhe.svg" alt="" class="detalhe">
                         </div>
 
-                        <div class="col-12 col-md-6 p-0">
-                          <div class="feat">
-                            com
-                          </div>
-                          <div class="titulo-secao d-flex">
+                        <div class="col-12 col-md-6 p-0 conteudo-gutenberg">
+                          <div class="titulo-secao">
+                            <div class="feat">
+                              com
+                            </div>
                             <h3 class="text-uppercase w-75 mb-0">Grabriel Cabral</h3>
                           </div>
                           <!-- detalhes -->
@@ -126,19 +126,25 @@
       <div class="col-12 contato">
         <h1>PARTICIPE</h1>
         <p>Deixe seu melhor e-mail e te manteremos informado de tudo que acontece no FILME POSSÍVEL</p>
-        <form action="" class="form">
-          <div class="form-group">
-            <label for="nome">nome</label>
-            <input type="text" placeholder="seu nome" maxlength="60" class="w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-4 p-0">
+              <form action="" class="form">
+                <div class="form-group">
+                  <label for="nome">nome</label>
+                  <input type="text" placeholder="seu nome" maxlength="60" class="w-100">
+                </div>
+                <div class="form-group">
+                  <label for="nome">e-mail</label>
+                  <input type="email" placeholder="seu email" maxlength="60" class="w-100">
+                </div>
+                <div class="form-group text-right m-0">
+                  <button href="" class="button mr-aut">ENVIAR</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="nome">e-mail</label>
-            <input type="email" placeholder="seu email" maxlength="60" class="w-100">
-          </div>
-          <div class="form-group text-right m-0">
-            <button href="" class="button mr-aut">ENVIAR</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>   
   </div>

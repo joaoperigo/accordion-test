@@ -2,6 +2,12 @@
   background-color: rgba(93, 120, 43, 0.9);
 }
 
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -50,9 +56,9 @@ h2 .focus {
 .button {
   background-color: #d30938;
   color: #f2f2f2;
-  padding: 10px 20px;
-  font-size: 19.8px;
-  line-height: 29px;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.8125rem;
 }
 
 a.button:focus, a.button:hover {
@@ -62,19 +68,19 @@ a.button:focus, a.button:hover {
 }
 
 body {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
   font-family: 'Space Mono', monospace;
   background-color: #5d782b;
 }
 
 .cruz-g {
-  width: 17px;
+  width: 1.0625rem;
   height: auto;
 }
 
 .cruz-p {
-  width: 14.5px;
+  width: 0.9375rem;
   height: auto;
 }
 
@@ -83,12 +89,12 @@ h1 {
 }
 
 h1 button {
-  font-size: 34px !important;
-  line-height: 51px !important;
+  font-size: 2.125rem !important;
+  line-height: 3.1875rem !important;
   font-weight: 700 !important;
   background-color: #d30938;
   color: #c4c4c4;
-  padding: 18px 50px 18px 18px;
+  padding: 1.125rem 3.125rem 1.125rem 1.125rem;
 }
 
 h1 button:hover, h2 button:hover {
@@ -96,45 +102,51 @@ h1 button:hover, h2 button:hover {
 }
 
 h2 {
-  margin-right: 18px;
+  margin-right: 1.125rem;
 }
 
 h2 button {
-  font-size: 22px !important;
-  line-height: 33px !important;
+  font-size: 1.375rem !important;
+  line-height: 2.0625rem !important;
   font-weight: bold !important;
   background-color: #d30938;
   color: #f2f2f2;
   border: 1px solid #c4c4c4;
-  padding: 22px 50px 22px 18px;
+  padding: 1.375rem 3.125rem 1.375rem 1.125rem;
 }
 
 .conteudo {
   background-color: #c4c4c4;
   color: #363636;
-  margin-right: 18px;
+  margin-right: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+  .conteudo {
+    padding-bottom: 5.625rem;
+  }
 }
 
 h3 {
-  font-size: 27.7px !important;
-  line-height: 41px !important;
+  font-size: 1.75rem !important;
+  line-height: 2.5625rem !important;
   font-weight: 700 !important;
 }
 
 h4 {
-  font-size: 17px !important;
-  line-height: 25px !important;
+  font-size: 1.0625rem !important;
+  line-height: 1.5625rem !important;
   font-weight: 700 !important;
 }
 
 blockquote, label {
-  font-size: 18px;
-  line-height: 31px;
+  font-size: 1.125rem;
+  line-height: 1.9375rem;
 }
 
 p {
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: 1.6875rem;
 }
 
 a {
@@ -142,9 +154,9 @@ a {
 }
 
 input {
-  padding: 10px 12px;
-  font-size: 14px;
-  line-height: 21px;
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
 
 .nav-topo {
@@ -156,9 +168,9 @@ input {
 }
 
 .logo {
-  width: 85px;
+  width: 5.3125rem;
   height: auto;
-  margin: 18px;
+  margin: 1.125rem;
 }
 
 .site {
@@ -182,7 +194,7 @@ input {
 .social-media-home {
   position: absolute;
   z-index: 2;
-  bottom: 18px;
+  bottom: 1.125rem;
   right: 25%;
   font-size: 42px;
 }
@@ -190,17 +202,17 @@ input {
 .barra-horizontal-verde {
   background-color: #5d782b;
   width: 100%;
-  height: 36px;
+  height: 2.25rem;
   position: relative;
   z-index: 1;
 }
 
 .conteudo-post {
-  padding: 0 17px;
+  padding: 0 1.0625rem;
 }
 
 .wrapper {
-  padding: 0 0 23px 0;
+  padding: 0 0 1.4375rem 0;
 }
 
 .img-destacada {
@@ -216,15 +228,25 @@ input {
   height: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .conteudo-gutenberg {
+    padding: 0 2.1875rem !important;
+  }
+}
+
 .detalhe {
   position: absolute;
-  top: -13px;
-  right: -13px;
+  top: -0.8125rem;
+  right: -0.8125rem;
 }
 
 .wrapper-clickable-post {
-  padding-top: 18px;
-  padding-bottom: 36px;
+  padding-top: 1.125rem;
+  padding-bottom: 2.25rem;
+}
+
+.titulo-secao {
+  padding-top: 0.2rem;
 }
 
 .saiba-mais {
@@ -232,29 +254,29 @@ input {
 }
 
 .saiba-mais span {
-  margin-right: 11px;
+  margin-right: 0.6875rem;
 }
 
 .cruz-primaria {
-  width: 12px;
+  width: 0.75rem;
   height: auto;
 }
 
 .contato {
   background-color: #363636;
-  padding: 36px 18px 41px;
-  margin-bottom: 40px;
+  padding: 2.25rem 1.125rem 2.5625rem;
+  margin-bottom: 2.5rem;
 }
 
 .contato h1 {
   color: #c4c4c4;
   border: none !important;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .contato p {
   color: #f2f2f2;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   margin-bottom: 0;
 }
 
@@ -272,13 +294,13 @@ input {
 }
 
 .footer address {
-  font-size: 28px;
-  padding: 30px 30px 15px 0;
+  font-size: 1.75rem;
+  padding: 1.875rem 1.875rem 0.9375rem 0;
 }
 
 .footer p {
-  padding: 0 0 15px 30px;
-  width: 240px;
+  padding: 0 0 0.9375rem 1.875rem;
+  width: 15rem;
 }
 
 /*ACORDEAO*/
